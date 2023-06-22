@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="nav">
-        <img src="@/assets/logo.png" alt="Nav Image">
+        <img src="@/assets/logo.png" alt="Nav Image" href="/">
         <div class="text-nav">
           <router-link to="/pedido"><a>Realizar Pedido</a></router-link>
           <router-link to="/"><a>Contatos</a></router-link>
@@ -40,6 +40,14 @@ export default {
   }
   .text-nav{
     margin-left: 50px;
+  }
+  @media (max-width: 767px) {
+    .nav a{
+      display: none;
+    }
+    .nav img{
+      margin: auto;
+    }
   }
 </style>
   
